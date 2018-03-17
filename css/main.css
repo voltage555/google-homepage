@@ -1,0 +1,37 @@
+/* ===== global ===== */
+
+body {
+    width: 100%;
+    height: 100%;
+    min-width: 980px;
+    background: #fff;
+    color: #222;
+    font-family: arial,sans-serif;
+}
+
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(0,0,0,0.77);
+}
+
+/* ===== nav ===== */
+
+
+
+/* ===== main ===== */
+.main,
+.logo,
+.searchbox {
+    margin: 0 auto;
+    min-width: 980px;
+}
