@@ -1,12 +1,14 @@
 /* ===== global ===== */
 
 body {
+    position: absolute;
     width: 100%;
     height: 100%;
     min-width: 980px;
+    min-height: 100%;
     background: #fff;
-    color: #222;
-    font-family: arial,sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 ul li {
@@ -14,7 +16,19 @@ ul li {
     margin: 0;
     padding: 0;
 }
+ul {
+    margin: 0;
+    padding: 0;
+}
 
+
+/* ===== typography ===== */
+
+body {
+    color: #222;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+}
 a {
     color: inherit;
     text-decoration: none;
@@ -22,16 +36,105 @@ a {
 
 a:hover {
     color: rgba(0,0,0,0.77);
+    text-decoration: underline;
 }
 
-/* ===== nav ===== */
+/* ===== header ===== */
 
+nav.header {
+    position: absolute;
+    top: 16px;
+    min-width: 980px;
+    width: 100%;
+}
+.header-left {
+    float: left;
+    margin: 7px 0 0 10px;
+}
+.header-left ul li {
+    display: inline-block;
+    padding-left: 15px;
+    color: #000;
+    opacity: 0.75;
+}
+.header-right {
+    display: inline-block;
+    float: right;
+    min-width: 220px;
+    padding: 0 30px 0 30px;
+    align-items: center;
+}
+.header-right,
+.header-right ul {
+    display: flex;
+    justify-content: flex-end;
+}
+#hr-1 {
+    padding-right: 15px;
+    line-height: 24px;
+}
 
+#hr-1 li:nth-last-of-type(1){
+    padding-left: 15px;
+}
 
+#hr-2 {
+    min-width: 114px;
+    justify-content: space-around;
+}
+#hr-2 .apps-btn {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    background-image: url(/img/i1_1967ca6a.png);
+    background-position: -132px -38px;
+    background-size: 528px 68px;
+    height: 30px;
+    width: 30px;
+    opacity: .55;
+}
+#hr-2 .sign-in-btn {
+    padding-left: 15px;
+}
+#hr-2 .sign-in-btn a {
+    display: block;
+    color: #fff;
+    background-color: #4285f4;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 2px;
+}
 /* ===== main ===== */
 .main,
 .logo,
-.searchbox {
+.searchbox,
+.footer {
+    display: block;
     margin: 0 auto;
     min-width: 980px;
+    width: 100%;
+}
+
+.main {
+    position: absolute;
+    height: 233px;
+    margin-top: 89px;
+}
+.searchbox {
+    position: absolute;
+    top: 311px;
+}
+
+/* ===== footer ===== */
+
+.footer ul,
+.footer ul li {
+    display: inline-block;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
 }
