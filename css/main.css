@@ -21,6 +21,12 @@ ul {
     padding: 0;
 }
 
+::-webkit-search-decoration,
+::-webkit-search-cancel-button,
+::-webkit-search-results-button,
+::-webkit-search-results-decoration {
+  display: none;
+}
 
 /* ===== typography ===== */
 
@@ -184,6 +190,8 @@ input[name="btn2"] {
     min-width: 54px;
     padding: 0 16px;
     text-align: center;
+}
+
 }
 input[type="button"]:hover {
     background-color: #f8f8f8;
