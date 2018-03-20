@@ -193,11 +193,33 @@ input[type="button"]:hover {
 }
 /* ===== footer ===== */
 
-.footer ul,
-.footer ul li {
-    display: inline-block;
-}
 .footer {
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 980px;
+    line-height: 40px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
 }
+.footer #ftr-left,
+.footer #ftr-right,
+#ftr-left ul li,
+#ftr-right ul li{
+    display: inline-block;
+}
+#ftr-left {
+    float: left;
+    color: #666;
+}
+#ftr-right {
+    float: right;
+    margin-right: 30px;
+    color: #666;
+}
+
+.footer li{
+    padding-left: 27px;
+}
+
