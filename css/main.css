@@ -191,6 +191,7 @@ input[name="btn2"] {
     min-width: 54px;
     padding: 0 16px;
     text-align: center;
+    outline: none;
 }
 
 input[name="btn1"]:hover,
